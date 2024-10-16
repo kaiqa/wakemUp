@@ -10,12 +10,13 @@ android {
 
     defaultConfig {
         applicationId = "com.example.wakemup"
-        minSdk = 33
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // Ensure vector drawables are supported on older devices
+        vectorDrawables.useSupportLibrary = true
+     //   testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
